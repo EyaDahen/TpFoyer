@@ -28,4 +28,59 @@ public class Etudiant {
   @ManyToMany(mappedBy = "etudiants")
   Set<Reservation> reservations = new HashSet<>();
 
+    public Long getIdEtudiant() {
+        return idEtudiant;
+    }
+
+    public void setIdEtudiant(Long idEtudiant) {
+        this.idEtudiant = idEtudiant;
+    }
+
+    public String getNomE() {
+        return nomE;
+    }
+
+    public void setNomE(String nomE) {
+        this.nomE = nomE;
+    }
+
+    public String getPrenomE() {
+        return prenomE;
+    }
+
+    public void setPrenomE(String prenomE) {
+        this.prenomE = prenomE;
+    }
+
+    public Long getCin() {
+        return cin;
+    }
+
+    public void setCin(Long cin) {
+        this.cin = cin;
+    }
+
+    public String getEcole() {
+        return ecole;
+    }
+
+    public void setEcole(String ecole) {
+        this.ecole = ecole;
+    }
+
+    public Date getDateNaissance() {
+        return dateNaissance;
+    }
+
+    public void setDateNaissance(Date dateNaissance) {
+        this.dateNaissance = dateNaissance;
+    }
+
+    public Set<Reservation> getReservations() {
+        return reservations;
+    }
+
+    public void setReservations(Set<Reservation> reservations) {
+        this.reservations = reservations;
+    }
 }

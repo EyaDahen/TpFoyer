@@ -27,5 +27,43 @@ public class Foyer {
     @OneToMany(mappedBy = "foyerBloc")
     public Set<Bloc> blocs = new HashSet<>();
 
+    public Long getIdFoyer() {
+        return idFoyer;
+    }
 
+    public void setIdFoyer(Long idFoyer) {
+        this.idFoyer = idFoyer;
+    }
+
+    public String getNomFoyer() {
+        return nomFoyer;
+    }
+
+    public void setNomFoyer(String nomFoyer) {
+        this.nomFoyer = nomFoyer;
+    }
+
+    public String getCapaciteFoyer() {
+        return capaciteFoyer;
+    }
+
+    public void setCapaciteFoyer(String capaciteFoyer) {
+        this.capaciteFoyer = capaciteFoyer;
+    }
+
+    public Set<Bloc> getBlocs() {
+        return blocs;
+    }
+
+    public void setBlocs(Set<Bloc> blocs) {
+        this.blocs = blocs;
+    }
+
+    public Universite getUniversite() {
+        return universite;
+    }
+
+    public void setUniversite(Universite universite) {
+        this.universite = universite;
+    }
 }

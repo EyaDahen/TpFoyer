@@ -20,4 +20,36 @@ public class Universite {
 
     @OneToOne
     Foyer foyerUniversite;
+
+    public Long getIdUniversite() {
+        return idUniversite;
+    }
+
+    public void setIdUniversite(Long idUniversite) {
+        this.idUniversite = idUniversite;
+    }
+
+    public String getNomUniversite() {
+        return nomUniversite;
+    }
+
+    public void setNomUniversite(String nomUniversite) {
+        this.nomUniversite = nomUniversite;
+    }
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
+
+    public Foyer getFoyerUniversite() {
+        return foyerUniversite;
+    }
+
+    public void setFoyerUniversite(Foyer foyerUniversite) {
+        this.foyerUniversite = foyerUniversite;
+    }
 }
