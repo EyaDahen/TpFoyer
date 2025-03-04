@@ -8,7 +8,7 @@ import java.util.List;
 public interface IBlocService {
     Bloc addBloc(Bloc bloc) ;
     Bloc updateBloc(Bloc bloc);
-    void deleteBloc(Long idBloc);
+    void deleteBloc(long idBloc);
     List<Bloc> retriveAllBlocs();
-    Bloc retriveBloc(Long idBloc);
+    Bloc retriveBloc(long idBloc);
 }

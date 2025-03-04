@@ -27,7 +27,7 @@ public class BlocServiceImplement implements IBlocService {
     }
 
     @Override
-    public void deleteBloc(Long idBloc) {
+    public void deleteBloc(long idBloc) {
         blocRepository.deleteById(idBloc);
 
     }
@@ -38,7 +38,7 @@ public class BlocServiceImplement implements IBlocService {
     }
 
     @Override
-    public Bloc retriveBloc(Long idBloc) {
+    public Bloc retriveBloc(long idBloc) {
         return blocRepository.findById(idBloc).get();
     }
 }

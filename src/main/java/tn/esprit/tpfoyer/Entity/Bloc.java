@@ -17,9 +17,9 @@ import java.util.Set;
 public class Bloc {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idBloc;
-   private String nomBlock;
-   private Long capaciteBloc;
+    private long idBloc;
+    private String nomBlock;
+    private long capaciteBloc;
 
    @ManyToOne
     Foyer foyerBloc;
